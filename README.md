@@ -1,7 +1,7 @@
 # Overview
 In this project, I examined a dataset of ~7,200 scientific papers, and built a natural language processing classifier that used the text of the paper itself in order to predict its authorship. Throughout the project I explored text vectorization, used multiple stratigies to deal with a highly imbalanced dataset, and created a multi-target multi-output classifier. My final model was unable to firmly predict authorship just based on the text, but was able to achieve much better than random performance and could be used to seperate papers that are clearly the author's from ones that need a human to check.
 
-                                            ![](images/scientific-journals.jpg)
+![](images/scientific-journals.jpg)
 
 # Business Case
  Plagiarism in scientific writing has been a difficult problem to solve, with many scientific journals publishing articles from “paper mills” that were not written by their supposed authors. For example, “International Publisher Limited” is a Russian paper mill company that offers authorship on soon to be released scientific papers [for up to $5000](https://www.science.org/content/article/russian-website-peddles-authorships-linked-reputable-journals). While these operations often target less reputable journals, even reputable publishing houses such as Elsevier have published articles from these mills. Natural language processing as a machine learning technique has progressed greatly over the past few years, and may offer a potential solution. By developing a model that can read a paper’s text and determine likely authorship, this kind of academic fraud could be caught more easily.
