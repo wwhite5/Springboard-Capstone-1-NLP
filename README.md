@@ -30,7 +30,7 @@ One other experiment was using **TruncatedSVD** for dimentionality reduction (si
 
 ![](images/PCA-analysis.png)
 
-Next, it was time to do **"manual" cross validating** on the logistic regression model and LinearSVD model, in order to get an idea of performance across several train/test splits. The LinearSVD model was found to give the best performance, but did not have the ability to easily predict probabilities like the logistic regression model, which would be important in later analysis. This gave me an average F2 score of 0.4 on the logistic regression model, which had a regularization parameter C=1 and used random oversampling. 
+Next, it was time to do **"manual" cross validating** on the logistic regression model and LinearSVD model, in order to get an idea of performance across several train/test splits. **The LinearSVD model was found to give the best performance, but did not have the ability to easily predict probabilities like the logistic regression model, which would be important in later analysis**. This gave me an average F2 score of 0.4 on the logistic regression model, which had a regularization parameter C=1 and used random oversampling. 
 
 Finally, I wanted to check feature importance for the final model, and used **predict_proba** to get the predicted probabilities of the negative and positive cases for the papers. While confusion matricies and hard yes/no answers are useful for comparing models to each other, the probability a given author wrote a paper would better suit the real world use case of the model, and shows a middle ground of "possibly this author's papers" that would otherwise be lost.
 
