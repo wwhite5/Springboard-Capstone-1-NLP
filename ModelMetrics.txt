@@ -1,0 +1,9 @@
+Final model metrics used:
+
+Model: LogisticRegression from sklearn
+
+Sampling: random oversampling
+
+Hyperparameters: Regularization parameter (C) = 1
+	max_iter = 1000
+	All other hyperparameters are default
